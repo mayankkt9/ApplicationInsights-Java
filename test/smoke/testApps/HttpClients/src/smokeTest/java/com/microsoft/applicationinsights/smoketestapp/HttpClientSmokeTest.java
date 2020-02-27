@@ -52,7 +52,6 @@ public class HttpClientSmokeTest extends AiSmokeTest {
         assertParentChild(rd, rdEnvelope, rddEnvelope);
     }
 
-    @Ignore // OpenTelemetry Auto-Instrumentation does not support Apache HttpClient 3
     @Test
     @TargetUri("/apacheHttpClient3")
     public void testAsyncDependencyCallWithApacheHttpClient3() throws Exception {
