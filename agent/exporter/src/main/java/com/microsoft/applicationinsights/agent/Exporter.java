@@ -65,7 +65,7 @@ public class Exporter implements SpanExporter {
     public ResultCode export(List<SpanData> spans) {
         try {
             for (SpanData span : spans) {
-                // System.out.println("SPAN: " + span);
+                System.out.println("SPAN: " + span);
                 export(span);
             }
             return ResultCode.SUCCESS;
